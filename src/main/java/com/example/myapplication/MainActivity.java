@@ -32,18 +32,26 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button button1;
+    Button button3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         button1=(Button)findViewById(R.id.button1);
+        button3 = (Button) findViewById(R.id.button3);
 
         addListenerOnButtonClick();
 
     }
     public void onClick(View v) {
         Intent intent = new Intent(MainActivity.this,secondActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClickButton(View v){
+        Intent intent = new Intent(MainActivity.this,working_with_Button.class);
         startActivity(intent);
     }
 
@@ -66,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 //reset progress bar and filesize status
                 progressBarStatus = 0;
                 fileSize = 0;
-                E:\MyApplication\app
+
                 new Thread(new Runnable() {
                     public void run() {
                         while (progressBarStatus < 100) {
