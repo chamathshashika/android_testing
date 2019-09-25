@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button1;
     Button button3;
+    Button button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
         button1=(Button)findViewById(R.id.button1);
         button3 = (Button) findViewById(R.id.button3);
+        button4 = (Button) findViewById(R.id.button4);
 
         addListenerOnButtonClick();
 
@@ -52,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButton(View v){
         Intent intent = new Intent(MainActivity.this,working_with_Button.class);
+        startActivity(intent);
+    }
+
+    public void onClickSpinnerButton(View v){
+        Intent intent = new Intent(MainActivity.this,SpinnerActivity.class);
         startActivity(intent);
     }
 
