@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     Button button1;
     Button button3;
     Button button4;
+    Button button5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         button1=(Button)findViewById(R.id.button1);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
+        button5 = (Button) findViewById(R.id.button5);
 
         addListenerOnButtonClick();
 
@@ -62,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+    public void onClickAutoCompleteButton(View v){
+        Intent intent = new Intent(MainActivity.this,AutocompleteActivity.class);
+        startActivity(intent);
+    }
 
 
     public void addListenerOnButtonClick() {
