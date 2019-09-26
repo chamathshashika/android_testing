@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomListView"></activity>
+        <activity android:name=".StarRating"></activity>
+        <activity android:name=".CustomListView" />
         <activity android:name=".MyList" />
         <activity android:name=".AutocompleteActivity" />
         <activity android:name=".Autocomplete_Activity" />

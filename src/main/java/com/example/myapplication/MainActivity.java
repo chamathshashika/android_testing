@@ -82,6 +82,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickStarRatings(View v){
+        Intent intent = new Intent(MainActivity.this,StarRating.class);
+        startActivity(intent);
+    }
+
 
 
     public void addListenerOnButtonClick() {
