@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     Button button4;
     Button button5;
     Button button6;
+    Button button7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         button4 = (Button) findViewById(R.id.button4);
         button5 = (Button) findViewById(R.id.button5);
         button6 = (Button) findViewById(R.id.button6);
+        button7 = (Button) findViewById(R.id.button7);
 
         addListenerOnButtonClick();
 
@@ -74,6 +76,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,AutocompleteActivity.class);
         startActivity(intent);
     }
+
+    public void onClickCustomListViewButton(View v){
+        Intent intent = new Intent(MainActivity.this,CustomListView.class);
+        startActivity(intent);
+    }
+
 
 
     public void addListenerOnButtonClick() {

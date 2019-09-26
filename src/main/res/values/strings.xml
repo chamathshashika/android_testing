@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
-    
-    
+
+
     <string-array name="array_technology">
         <item>Android</item>
         <item>Java</item>
@@ -16,5 +16,5 @@
         <item>.Net</item>
         <item>Perl</item>
     </string-array>
-    
+
 </resources>
