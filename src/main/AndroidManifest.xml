@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AutocompleteActivity"></activity>
+        <activity android:name=".MyList"></activity>
+        <activity android:name=".AutocompleteActivity" />
         <activity android:name=".Autocomplete_Activity" />
         <activity android:name=".SpinnerActivity" />
         <activity android:name=".working_with_Button" />
