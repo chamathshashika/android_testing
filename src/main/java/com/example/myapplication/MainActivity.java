@@ -88,6 +88,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void onClickWebWiew(View v){
+        Intent intent = new Intent(MainActivity.this,WebView.class);
+        startActivity(intent);
+    }
+
+
 
     public void addListenerOnButtonClick() {
         btnStartProgress = findViewById(R.id.button2);
