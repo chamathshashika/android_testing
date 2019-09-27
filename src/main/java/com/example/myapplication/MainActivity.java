@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button1=(Button)findViewById(R.id.button1);
+        button1 = (Button)findViewById(R.id.button1);
         button3 = (Button) findViewById(R.id.button3);
         button4 = (Button) findViewById(R.id.button4);
         button5 = (Button) findViewById(R.id.button5);
@@ -90,6 +90,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickWebWiew(View v){
         Intent intent = new Intent(MainActivity.this,WebView.class);
+        startActivity(intent);
+    }
+
+
+    public void onClickImageSilder(View v){
+        Intent intent = new Intent(MainActivity.this,ImageSlider.class);
         startActivity(intent);
     }
 
